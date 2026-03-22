@@ -1,0 +1,254 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.row-layout {
+  display: flex;
+}
+.dashboard-row-layout {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  padding: 48px 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-column-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header-column-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-shrink: 0;
+}
+.metrics-row-layout {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  flex-shrink: 0;
+}
+.new-arrivals {
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.metric-column-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+}
+.metric-growth-row {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-shrink: 0;
+}
+.dashboard-row-layout_1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.main-content-column-1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex: 3 0 0;
+}
+.charts-row-layout-1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.basic-dashboard-column-1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 360px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.basic-dashboard-column-3 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 360px;
+  min-height: 50px;
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+.side-content-column-1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 24px;
+  position: relative;
+  min-width: unset;
+  max-height: unset;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.basic-dashboard-column-4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 360px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.metric-avatar {
+  --igx-avatar-background: var(--ig-info-500);
+}
+.icon {
+  color: var(--ig-info-500-contrast);
+}
+.growth-rate {
+  color: var(--ig-success-500);
+  height: max-content;
+  min-width: min-content;
+}
+.metric-avatar_1 {
+  --igx-avatar-background: var(--ig-warn-500);
+}
+.icon_1 {
+  color: var(--ig-warn-500-contrast);
+}
+.metric-avatar_2 {
+  --igx-avatar-background: var(--ig-success-500);
+}
+.icon_2 {
+  color: var(--ig-success-500-contrast);
+}
+.metric-avatar_3 {
+  --igx-avatar-background: var(--ig-error-500);
+}
+.icon_3 {
+  color: var(--ig-error-500-contrast);
+}
+.growth-rate_1 {
+  color: var(--ig-error-500);
+  height: max-content;
+  min-width: min-content;
+}
+.list-item-avatar-1 {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-primary-100);
+}
+.icon_4 {
+  color: var(--ig-primary-100-contrast);
+}
+.avatar {
+  --ig-size: var(--ig-size-small);
+}
+.metric-avatar_4::part(base) {
+  --igx-avatar-color: var(--ig-info-500-contrast);
+}
+.metric-avatar_1_1::part(base) {
+  --igx-avatar-color: var(--ig-warn-500-contrast);
+}
+.metric-avatar_2_1::part(base) {
+  --igx-avatar-color: var(--ig-success-500-contrast);
+}
+.metric-avatar_3_1::part(base) {
+  --igx-avatar-color: var(--ig-error-500-contrast);
+}
+.list-item-avatar-1_1::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.list-item-avatar-1_2::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.list-item-avatar-1_3::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.list-item-avatar-1_4::part(base) {
+  --igx-avatar-color: var(--ig-primary-100-contrast);
+}
+.monthly-sales-chart {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.market-share-chart {
+  min-width: 250px;
+  min-height: 250px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.inventory-grid {
+  --ig-size: var(--ig-size-medium);
+  min-width: 200px;
+  max-height: 400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.activity-list {
+  height: max-content;
+  min-width: min-content;
+}

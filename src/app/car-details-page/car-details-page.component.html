@@ -1,0 +1,71 @@
+<div class="row-layout grid-page-row-layout-1">
+  <div class="column-layout grid-page-col-layout-1">
+    <div class="row-layout header-buttons-row-1">
+      <div class="column-layout header-buttons-col-1">
+        <h3 class="content">
+          Car Details Overview
+        </h3>
+        <p class="content">
+          Comprehensive information on all vehicle models.
+        </p>
+      </div>
+      <div class="row-layout header-buttons-action-row-1">
+        <button igxButton="contained" type="button" class="add-car-button-1">
+          <igx-icon>
+            add
+          </igx-icon>
+          <span>Add Car</span>
+        </button>
+        <button igxButton="outlined" type="button" class="add-car-button-1">
+          Export Data
+        </button>
+      </div>
+    </div>
+    <div class="row-layout filter-search-row-1">
+      <igx-input-group type="search" class="search-input-1">
+        <igx-prefix>
+          <igx-icon class="search-icon-1">
+            search
+          </igx-icon>
+        </igx-prefix>
+        <input type="search" [(ngModel)]="value" placeholder="Search cars..." igxInput />
+        <label igxLabel>Search</label>
+      </igx-input-group>
+      <div class="row-layout filter-select-row-1">
+        <igx-select type="border" placeholder="Filter by Type" class="type-select-1">
+          <igx-select-item value="Sedan">
+            Sedan
+          </igx-select-item>
+          <igx-select-item value="SUV">
+            SUV
+          </igx-select-item>
+          <igx-select-item value="Truck">
+            Truck
+          </igx-select-item>
+        </igx-select>
+        <igx-select type="border" placeholder="Filter by Make" class="type-select-1">
+          <igx-select-item value="Toyota">
+            Toyota
+          </igx-select-item>
+          <igx-select-item value="Honda">
+            Honda
+          </igx-select-item>
+          <igx-select-item value="Ford">
+            Ford
+          </igx-select-item>
+        </igx-select>
+      </div>
+    </div>
+    <igx-grid [data]="northwindEmployees" primaryKey="employeeID" [allowFiltering]="true" filterMode="excelStyleFilter" class="car-details-grid">
+      <igx-column field="Make" header="Make" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Model" header="Model" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Year" header="Year" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Engine" header="Engine" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="HP" header="HP" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Transmission" header="Transmission" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Fuel Type" header="Fuel Type" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="Price" header="Price" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      <igx-column field="MPG" header="MPG" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    </igx-grid>
+  </div>
+</div>

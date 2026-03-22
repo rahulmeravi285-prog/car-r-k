@@ -1,0 +1,535 @@
+<div class="row-layout product-list-row-layout-1">
+  <div class="column-layout product-list-col-layout-1">
+    <div class="column-layout product-list-header-col-layout-1">
+      <h3 class="content">
+        Explore Our Car Models
+      </h3>
+      <p class="content">
+        Compare and find your perfect ride.
+      </p>
+    </div>
+    <div class="row-layout product-list-content-row-1">
+      <div class="column-layout product-list-left-filters-col-1">
+        <div class="column-layout product-list-header-col-layout-1">
+          <igx-list class="category-list-1">
+            <igx-list-item [isHeader]="true">Category</igx-list-item>
+            <igx-list-item [selected]="this.categoryList1SelectedItem != null && this.categoryList1SelectedItem === '1'" (click)="categoryList1SelectedItem = '1'">
+              <span igxListLineTitle>Sedans</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.categoryList1SelectedItem != null && this.categoryList1SelectedItem === '2'" (click)="categoryList1SelectedItem = '2'">
+              <span igxListLineTitle>SUVs</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.categoryList1SelectedItem != null && this.categoryList1SelectedItem === '3'" (click)="categoryList1SelectedItem = '3'">
+              <span igxListLineTitle>Trucks</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.categoryList1SelectedItem != null && this.categoryList1SelectedItem === '4'" (click)="categoryList1SelectedItem = '4'">
+              <span igxListLineTitle>Electric</span>
+            </igx-list-item>
+          </igx-list>
+          <a class="ig-typography__body-2 category-see-more-1">
+            See more
+          </a>
+        </div>
+        <igx-list class="category-list-1">
+          <igx-list-item [isHeader]="true">Price</igx-list-item>
+          <igx-list-item [selected]="this.priceList1SelectedItem != null && this.priceList1SelectedItem === '1'" (click)="priceList1SelectedItem = '1'">
+            <span igxListLineTitle>Under $25,000</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.priceList1SelectedItem != null && this.priceList1SelectedItem === '2'" (click)="priceList1SelectedItem = '2'">
+            <span igxListLineTitle>$25,000 - $50,000</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.priceList1SelectedItem != null && this.priceList1SelectedItem === '3'" (click)="priceList1SelectedItem = '3'">
+            <span igxListLineTitle>Over $50,000</span>
+          </igx-list-item>
+        </igx-list>
+        <div class="column-layout product-list-header-col-layout-1">
+          <igx-list class="category-list-1">
+            <igx-list-item [isHeader]="true">Brand</igx-list-item>
+            <igx-list-item [selected]="this.brandList1SelectedItem != null && this.brandList1SelectedItem === '1'" (click)="brandList1SelectedItem = '1'">
+              <span igxListLineTitle>Toyota</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.brandList1SelectedItem != null && this.brandList1SelectedItem === '2'" (click)="brandList1SelectedItem = '2'">
+              <span igxListLineTitle>Honda</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.brandList1SelectedItem != null && this.brandList1SelectedItem === '3'" (click)="brandList1SelectedItem = '3'">
+              <span igxListLineTitle>Ford</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.brandList1SelectedItem != null && this.brandList1SelectedItem === '4'" (click)="brandList1SelectedItem = '4'">
+              <span igxListLineTitle>BMW</span>
+            </igx-list-item>
+          </igx-list>
+          <a class="ig-typography__body-2 category-see-more-1">
+            See more
+          </a>
+        </div>
+        <igx-list class="category-list-1">
+          <igx-list-item [isHeader]="true">Rating</igx-list-item>
+          <igx-list-item [selected]="this.ratingList1SelectedItem != null && this.ratingList1SelectedItem === '1'" (click)="ratingList1SelectedItem = '1'">
+            <span igxListLineTitle>5 Stars</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.ratingList1SelectedItem != null && this.ratingList1SelectedItem === '2'" (click)="ratingList1SelectedItem = '2'">
+            <span igxListLineTitle>4 Stars &amp; Up</span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.ratingList1SelectedItem != null && this.ratingList1SelectedItem === '3'" (click)="ratingList1SelectedItem = '3'">
+            <span igxListLineTitle>3 Stars &amp; Up</span>
+          </igx-list-item>
+        </igx-list>
+      </div>
+      <div class="column-layout product-list-right-content-col-1">
+        <div class="row-layout page-results-sorting-row-1">
+          <p class="results-count-1">
+            Showing 1-12 of 50 results
+          </p>
+          <igx-select type="border" placeholder="Sort by" class="sort-select-1">
+            <igx-select-item value="Featured">
+              Featured
+            </igx-select-item>
+            <igx-select-item value="Price: Low to High">
+              Price: Low to High
+            </igx-select-item>
+            <igx-select-item value="Price: High to Low">
+              Price: High to Low
+            </igx-select-item>
+            <igx-select-item value="Newest Arrivals">
+              Newest Arrivals
+            </igx-select-item>
+          </igx-select>
+        </div>
+        <div class="row-layout product-grid-row-1">
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/101/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Model X
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Luxury Sedan
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (120)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $45,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/102/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Explorer
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Adventure SUV
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel1" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (95)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $38,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/103/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Workhorse
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Heavy Duty Truck
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel2" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (150)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $55,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/104/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                VoltDrive
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Eco-friendly Electric
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel3" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (80)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $62,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/105/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                RetroGlide
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Timeless Classic
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel4" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (200)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $75,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/106/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Speedster
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Compact Sport
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel5" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (130)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $32,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/107/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                EliteCruiser
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Premium SUV
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel6" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (180)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $68,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/108/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                ApexRacer
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                High Performance
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel7" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (220)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $95,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/109/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                TrailBlazer
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                All-Terrain
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel8" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (110)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $42,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/110/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                CityGlide
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Urban Commuter
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel9" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (75)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $28,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/111/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                Voyager
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Family Comfort
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel10" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (60)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $35,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+          <igx-card class="product-card-1">
+            <igx-card-media height="200px">
+              <img src="https://picsum.photos/id/112/200/300" alt="" class="image" />
+            </igx-card-media>
+            <igx-card-header>
+              <h3 igxCardHeaderTitle>
+                SunSeeker
+              </h3>
+              <h5 igxCardHeaderSubtitle>
+                Sporty Convertible
+              </h5>
+            </igx-card-header>
+            <igx-card-content>
+              <div class="column-layout product-card-col-1">
+                <div class="row-layout rating-row-1">
+                  <igc-rating [(ngModel)]="ngModel11" class="product-rating-1"></igc-rating>
+                  <p class="ig-typography__body-2 content">
+                    (105)
+                  </p>
+                </div>
+                <h6 class="content">
+                  $50,000
+                </h6>
+              </div>
+            </igx-card-content>
+            <igx-card-actions>
+              <ng-container igxStart>
+                <button igxButton="contained" type="button" class="product-button-1">
+                  <igx-icon>
+                    shopping_cart
+                  </igx-icon>
+                  <span>Add to Cart</span>
+                </button>
+              </ng-container>
+            </igx-card-actions>
+          </igx-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

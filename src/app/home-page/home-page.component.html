@@ -1,0 +1,287 @@
+<div class="row-layout dashboard-row-layout">
+  <div class="column-layout dashboard-column-layout">
+    <div class="column-layout header-column-layout">
+      <h3 class="content">
+        Welcome to Car Reshiga Gems!
+      </h3>
+      <p class="content">
+        Your ultimate destination for car exploration, comparison, and the best deals.
+      </p>
+    </div>
+    <div class="row-layout metrics-row-layout">
+      <igx-card class="new-arrivals">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="metric-avatar metric-avatar_4">
+              <igx-icon class="icon">
+                fiber_new
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            New Arrivals
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+        </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout metric-column-layout">
+            <h3 class="content">
+              25
+            </h3>
+            <div class="row-layout metric-growth-row">
+              <p class="ig-typography__subtitle-2 growth-rate">
+                +12%
+              </p>
+              <p class="ig-typography__body-2 content">
+                since last month
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="new-arrivals">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="metric-avatar_1 metric-avatar_1_1">
+              <igx-icon class="icon_1">
+                visibility
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Top Viewed
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+        </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout metric-column-layout">
+            <h3 class="content">
+              5,200
+            </h3>
+            <div class="row-layout metric-growth-row">
+              <p class="ig-typography__subtitle-2 growth-rate">
+                +8%
+              </p>
+              <p class="ig-typography__body-2 content">
+                since last week
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="new-arrivals">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="metric-avatar_2 metric-avatar_2_1">
+              <igx-icon class="icon_2">
+                thumb_up
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Deals Closed
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+        </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout metric-column-layout">
+            <h3 class="content">
+              $1.2M
+            </h3>
+            <div class="row-layout metric-growth-row">
+              <p class="ig-typography__subtitle-2 growth-rate">
+                +15%
+              </p>
+              <p class="ig-typography__body-2 content">
+                since last quarter
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="new-arrivals">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="metric-avatar_3 metric-avatar_3_1">
+              <igx-icon class="icon_3">
+                pending_actions
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Upcoming Leads
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+        </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout metric-column-layout">
+            <h3 class="content">
+              18
+            </h3>
+            <div class="row-layout metric-growth-row">
+              <p class="ig-typography__subtitle-2 growth-rate_1">
+                -5%
+              </p>
+              <p class="ig-typography__body-2 content">
+                since last month
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+    </div>
+    <div class="row-layout dashboard-row-layout_1">
+      <div class="column-layout main-content-column-1">
+        <div class="row-layout charts-row-layout-1">
+          <div class="column-layout basic-dashboard-column-1">
+            <div class="column-layout header-column-layout">
+              <h5 class="content">
+                Monthly Car Sales
+              </h5>
+              <p class="ig-typography__body-2 content">
+                Overview of sales performance
+              </p>
+            </div>
+            <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" xAxisTitle="Month" yAxisTitle="Units Sold" computedPlotAreaMarginMode="series" class="monthly-sales-chart"></igx-category-chart>
+          </div>
+          <div class="column-layout basic-dashboard-column-1">
+            <div class="column-layout header-column-layout">
+              <h5 class="content">
+                Market Share by Segment
+              </h5>
+              <p class="ig-typography__body-2 content">
+                Current distribution of sales
+              </p>
+            </div>
+            <igx-pie-chart [dataSource]="financialBoxOfficeRevenue" labelMemberPath="Franchise" valueMemberPath="TotalWorldBoxOfficeRevenue" class="market-share-chart"></igx-pie-chart>
+          </div>
+        </div>
+        <div class="column-layout basic-dashboard-column-3">
+          <div class="column-layout header-column-layout">
+            <h5 class="content">
+              Car Inventory Details
+            </h5>
+            <p class="ig-typography__body-2 content">
+              Detailed listing of available cars
+            </p>
+          </div>
+          <igx-grid [data]="northwindEmployees" primaryKey="employeeID" [allowFiltering]="true" filterMode="excelStyleFilter" class="inventory-grid">
+            <igx-column field="Make" header="Make" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="Model" header="Model" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="Year" header="Year" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="Price" header="Price" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="Color" header="Color" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column field="Status" header="Status" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+          </igx-grid>
+        </div>
+      </div>
+      <div class="column-layout side-content-column-1">
+        <div class="column-layout basic-dashboard-column-4">
+          <div class="column-layout header-column-layout">
+            <h5 class="content">
+              Recent Activities
+            </h5>
+            <p class="ig-typography__body-2 content">
+              Latest user interactions
+            </p>
+          </div>
+          <igx-list class="activity-list">
+            <igx-list-item [selected]="this.activityListSelectedItem != null && this.activityListSelectedItem === '0'" (click)="activityListSelectedItem = '0'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="list-item-avatar-1 list-item-avatar-1_1">
+                  <igx-icon class="icon_4">
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>User Activity</span>
+              <span igxListLineSubTitle>Viewed 'Sports Car X'</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.activityListSelectedItem != null && this.activityListSelectedItem === '1'" (click)="activityListSelectedItem = '1'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="list-item-avatar-1 list-item-avatar-1_2">
+                  <igx-icon class="icon_4">
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>User Activity</span>
+              <span igxListLineSubTitle>Compared 'Sedan Y' and 'Sedan Z'</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.activityListSelectedItem != null && this.activityListSelectedItem === '2'" (click)="activityListSelectedItem = '2'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="list-item-avatar-1 list-item-avatar-1_3">
+                  <igx-icon class="icon_4">
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>User Activity</span>
+              <span igxListLineSubTitle>Added 'SUV A' to wishlist</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.activityListSelectedItem != null && this.activityListSelectedItem === '3'" (click)="activityListSelectedItem = '3'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="list-item-avatar-1 list-item-avatar-1_4">
+                  <igx-icon class="icon_4">
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>User Activity</span>
+              <span igxListLineSubTitle>Shared 'Truck B' deal</span>
+            </igx-list-item>
+          </igx-list>
+        </div>
+        <div class="column-layout basic-dashboard-column-4">
+          <div class="column-layout header-column-layout">
+            <h5 class="content">
+              Top Deals
+            </h5>
+            <p class="ig-typography__body-2 content">
+              Unbeatable offers available
+            </p>
+          </div>
+          <igx-list class="activity-list">
+            <igx-list-item [selected]="this.dealsListSelectedItem != null && this.dealsListSelectedItem === '0'" (click)="dealsListSelectedItem = '0'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="avatar">
+                  <igx-icon>
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>Luxury Sedan</span>
+              <span igxListLineSubTitle>Up to $5,000 off</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.dealsListSelectedItem != null && this.dealsListSelectedItem === '1'" (click)="dealsListSelectedItem = '1'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="avatar">
+                  <igx-icon>
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>Family SUV</span>
+              <span igxListLineSubTitle>0% APR financing</span>
+            </igx-list-item>
+            <igx-list-item [selected]="this.dealsListSelectedItem != null && this.dealsListSelectedItem === '2'" (click)="dealsListSelectedItem = '2'">
+              <span igxListThumbnail>
+                <igx-avatar shape="circle" class="avatar">
+                  <igx-icon>
+                    person
+                  </igx-icon>
+                </igx-avatar>
+              </span>
+              <span igxListLineTitle>Electric Vehicle</span>
+              <span igxListLineSubTitle>Lease specials from $299/month</span>
+            </igx-list-item>
+          </igx-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
